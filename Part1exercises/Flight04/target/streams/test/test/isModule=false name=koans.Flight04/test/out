@@ -3,16 +3,4 @@
 [0m[[0minfo[0m] [0m[32m- List Shakespeare files in the given directory[0m[0m
 [0m[[0minfo[0m] [0m[32m- First line of file[0m[0m
 [0m[[0minfo[0m] [0m[32m- statement or question?[0m[0m
-[0m[[0minfo[0m] [0m[31m- shakespeare files contain question or statement? *** FAILED ***[0m[0m
-[0m[[0minfo[0m] [0m[31m  java.util.NoSuchElementException: key not found: caesar.shkspr[0m[0m
-[0m[[0minfo[0m] [0m[31m  at scala.collection.MapLike$class.default(MapLike.scala:228)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at scala.collection.AbstractMap.default(Map.scala:59)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at scala.collection.MapLike$class.apply(MapLike.scala:141)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at scala.collection.AbstractMap.apply(Map.scala:59)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at koans.Flight04$$anonfun$5.apply$mcV$sp(Flight04.scala:108)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at koans.Flight04$$anonfun$5.apply(Flight04.scala:93)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at koans.Flight04$$anonfun$5.apply(Flight04.scala:93)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at org.scalatest.Transformer$$anonfun$apply$1.apply$mcV$sp(Transformer.scala:22)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[32m- shakespeare files contain question or statement?[0m[0m

@@ -79,7 +79,7 @@ class Flight04 extends KoanSuite with Matchers with SeveredStackTraces {
   // and then the last character is matched to either a '?' ("Question") or anything else ("Statement")
   // so that the test below passes
   def statementOrQuestion(str : String) : String =
-      if (str.replaceAll("\\s|hello|Hello", "") == "?") "Question" else "Statement"
+      if (str.replaceAll("\\s", "").endsWith("?")) "Question" else "Statement"
 
   test ("statement or question?") {
     statementOrQuestion("hello") should be ("Statement")
@@ -102,13 +102,14 @@ class Flight04 extends KoanSuite with Matchers with SeveredStackTraces {
     // can you add a test for a key of "macbeth.shkspr" that ensures a java.util.NoSuchElementException?
     // extra extra credit - can you find a way to do it without using either a var or a mutable Map?
     //var shksprMap = new scala.collection.immutable.HashMap[String, String]
-
-    val shksprMap = new scala.collection.immutable.HashMap[String, String]
+    var shksprMap = new scala.collection.mutable.HashMap[String, String]
+    for(file <- listShakespeareFiles("."))   shksprMap(file) = statementOrQuestion(firstLineOfFile(file))
 
     shksprMap("caesar.shkspr") should be ("Statement")
     shksprMap("romeo.shkspr") should be ("Question")
     shksprMap("hamlet.shkspr") should be ("Statement")
-    intercept[java.io.FileNotFoundException] { 
+
+    intercept[java.util.NoSuchElementException] { 
      shksprMap("macbeth.shkspr") should be ("")
     }
 
