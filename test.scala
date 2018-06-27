@@ -16,7 +16,6 @@ object Solution {
         case (h:List[_])::tail => flatten(h):::flatten(tail)
         case h::tail => h::flatten(tail)
     }
-
     def flattenOptimized(ls: List[Any]): List[Any] = ls flatMap {
         case ms: List[_] => flatten(ms)
         case e => List(e)
@@ -31,12 +30,10 @@ object Solution {
             case Nil => Nil
         }
     }
-
     def compressRecursive[A](ls: List[A]): List[A] = ls match {
         case Nil       => Nil
         case h :: tail => h :: compressRecursive(tail.dropWhile(_ == h))
     }
-
     def compressFunctional[A](ls: List[A]): List[A] =
         ls.foldRight(List[A]()) { (h, r) =>
         if (r.isEmpty || r.head != h) h :: r
@@ -52,6 +49,13 @@ object Solution {
         }
     }
 
-    def encode[A](ls: List[A]) = for( p <- pack(ls)) yield (p.length, p(0))
+    def encode[A](ls: List[A]): List[(Int, A)] = for( p <- pack(ls)) yield (p.length, p.head)
     def encodeMap[A](ls: List[A]): List[(Int, A)] = pack(ls) map { e => (e.length, e.head) }
+
+    def encodeModified[A](ls: List[A]): List[Any] = for( p <- pack(ls)) yield {if (p.length == 1) p.head else (p.length, p.head)}
+    def encodeModifiedMap[A](ls: List[A]): List[Any] = encode(ls) map { t => if (t._1 == 1) t._2 else t }
+    
+    def decode[A](ls: List[(Int, A)]): List[Any] = {
+        ls.flatMap {t => for(i<-1 to t._1) yield t._2}
+    }
 }
