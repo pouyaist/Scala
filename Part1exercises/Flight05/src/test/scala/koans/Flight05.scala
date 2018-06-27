@@ -117,7 +117,10 @@ class Flight05 extends KoanSuite with Matchers with SeveredStackTraces {
 
   test ("URL cleaner") {
     def urlClean(urlAsString : String) : URL = {
-      new URL(urlAsString)
+      try new URL(urlAsString)
+      catch{
+        case e: MalformedURLException => new URL("http://badurl.com")
+      }
     }
 
     // fix the method above to catch a malformed URL and replace it with a URL made out of
@@ -138,7 +141,12 @@ class Flight05 extends KoanSuite with Matchers with SeveredStackTraces {
     // Use pattern matching
 
     def oppositeOf(item: String) =
-      item
+      item match{
+        case "North" => "South"
+        case "Hot" => "Cold"
+        case "Cool" => "Square"
+        case _ => "Not " + item
+      }
 
     oppositeOf("North") should be ("South")
     oppositeOf("Hot") should be ("Cold")
