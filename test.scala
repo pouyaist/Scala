@@ -43,4 +43,15 @@ object Solution {
         else r
     }
 
+    def pack[A](ls: List[A]): List[List[A]] = ls match {
+        case Nil  => List(List())
+        case _  => {
+            val (packed, next) = ls span { _ == ls.head }
+            if (next == Nil) List(packed)
+            else packed :: pack(next)
+        }
+    }
+
+    def encode[A](ls: List[A]) = for( p <- pack(ls)) yield (p.length, p(0))
+    def encodeMap[A](ls: List[A]): List[(Int, A)] = pack(ls) map { e => (e.length, e.head) }
 }
