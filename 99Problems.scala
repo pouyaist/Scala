@@ -106,5 +106,19 @@ object Solution {
     }
 
     def range(s: Int, e: Int): List[Int] = (s to e).toList 
+
+    def randomSelect[A](n: Int, ls: List[A]): List[(A)] = {
+        if(n <= 0) Nil
+        else {
+            val r = scala.util.Random
+            val removeRes = removeAt(r.nextInt(ls.length), ls)
+            removeRes._2 :: randomSelect(n - 1, removeRes._1)
+        }
+    }
+
+    def lotto(rand: Int, rangeNumber:Int): List[(Int)] = randomSelect(rand, range(1, rangeNumber))
+
+    def randomPermute[A](ls: List[A]): List[A]  = scala.util.Random.shuffle(ls)
+
 }
 
