@@ -1,2 +1,3 @@
-# Scala
-Stairway to Scala Applied, Excersises
+# Scala #
+### Stairway to Scala Applied, Exercises ###
+### Solution 99 Problems of Scala ###
