@@ -1,4 +1,11 @@
 object Solution {
+
+    def last[A](ls: List[A]): A = ls.last
+
+    def penultimate[A](ls: List[A]): A =
+        if (ls.isEmpty) throw new NoSuchElementException
+        else ls.init.last
+
     def nth(k: Int, lst: List[Int]): Int = {
         if (k < 0) throw new IllegalArgumentException
         if (lst.length < k) throw new NoSuchElementException
@@ -58,4 +65,46 @@ object Solution {
     def decode[A](ls: List[(Int, A)]): List[Any] = {
         ls.flatMap {t => for(i<-1 to t._1) yield t._2}
     }
+
+    def encodeDirect[A](ls: List[A]): List[(Int, A)] = {
+        if (ls.isEmpty) Nil
+        else {
+            val (packed, next) = ls span { _ == ls.head }
+            (packed.length, packed.head) :: encodeDirect(next)
+        }
+    }   
+
+    def duplicate[A](ls: List[A]): List[(A)] = ls.flatMap {t => List(t,t)}
+    def duplicateN[A](n: Int, ls: List[A]): List[(A)] = ls.flatMap {t => List.fill(n)(t)}
+
+    def drop[A](n: Int, ls: List[A]): List[(A)] = if (ls.size < n) ls else ls.take(n - 1) ++ ls.drop(n)
+
+    def split[A](n: Int, ls: List[A]): (List[A], List[A])  = ls.splitAt(n)
+    def splitFunctional[A](n: Int, ls: List[A]): (List[A], List[A]) = (ls.take(n), ls.drop(n))
+
+    def slice[A](n: Int, k: Int, ls: List[A]): List[A] = ls.slice(n, k)
+    def sliceFunctional[A](s: Int, e: Int, ls: List[A]): List[A] =   ls drop s take (e - (s max 0))
+
+    def rotate[A](r: Int, ls: List[A]) = 
+    {
+        if (r > 0) ls.drop(r) ++ ls.take(r) 
+        else ls.takeRight(math.abs(r)) ++ ls.reverse.drop(math.abs(r)).reverse
+    }
+
+    def removeAt[A](n: Int, ls: List[A]): (List[(A)], A) = 
+    {
+        if (n < 0) throw new NoSuchElementException
+        else (n, ls) match {
+            case (_, Nil) => throw new NoSuchElementException
+            case (_, _) => (ls.take(n) ++ ls.drop(n + 1), ls.drop(n).head)
+        }
+    }
+
+    def insertAt[A](k: A, n: Int,  ls: List[A]): List[A] = ls.take(n) ::: k :: ls.drop(n)
+    def insertAtWithSplit[A](e: A, n: Int, ls: List[A]): List[A] = ls.splitAt(n) match {
+        case (pre, post) => pre ::: e :: post
+    }
+
+    def range(s: Int, e: Int): List[Int] = (s to e).toList 
 }
+
