@@ -107,7 +107,7 @@ object Solution {
 
     def range(s: Int, e: Int): List[Int] = (s to e).toList 
 
-    def randomSelect[A](n: Int, ls: List[A]): List[(A)] = {
+    def randomSelect[A](n: Int, ls: List[A]): List[A] = {
         if(n <= 0) Nil
         else {
             val r = scala.util.Random
@@ -120,5 +120,17 @@ object Solution {
 
     def randomPermute[A](ls: List[A]): List[A]  = scala.util.Random.shuffle(ls)
 
+    def combinations[A](n: Int, ls: List[A]): List[List[A]] = {
+        if (n > ls.length) Nil
+        else ls match {
+            case _ :: _ if n == 1 =>
+                ls.map(List(_))
+            case head :: tail =>
+                combinations(n - 1, tail).map(head :: _) ::: combinations(n, tail)
+            case _ => Nil
+        }
+    }
+
+  //p27 was super hard, could not figure it out
 }
 
