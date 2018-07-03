@@ -1,3 +1,5 @@
+import scala.annotation.tailrec
+
 object Solution {
 
     def last[A](ls: List[A]): A = ls.last
@@ -131,6 +133,34 @@ object Solution {
         }
     }
 
-  //p27 was super hard, could not figure it out
+  //TODO p27 was super hard, could not figure it out
+
+    def lsort[A](ls: List[List[A]]): List[List[A]] = ls sortWith {_.length < _.length}
+
+}
+/*
+    Arithmetic
+*/
+
+object Arithmetic {
+    def isPrime(num: Int): Boolean =
+        (num > 1) && !(2 to scala.math.sqrt(num).toInt).exists(x =>num % x == 0)
+    
+    @tailrec
+    def gcd(a: Int,b: Int): Int = if(b ==0) a else gcd(b, a%b)
+    
+    def isCoprimeTo(a: Int,b: Int): Boolean = if(gcd(a, b) == 1) true else false
+
+    def totient(a: Int): Int = {
+        var count: Int = 0
+        for(x <-1 to a) 
+         { 
+            if(isCoprimeTo(a, x)) count += 1
+         }
+         count
+    }
+    def totientFunctional(start: Int): Int = (1 to start) filter { isCoprimeTo(start, _) } length 
+
+    // TODO p35 is not implemented
 }
 
