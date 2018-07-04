@@ -1,9 +1,0 @@
-[0m[[0minfo[0m] [0m[32mFlight03:[0m[0m
-[0m[[0minfo[0m] [0m[32m- Create a new Complex number and check the values for the real/imaginary parts[0m[0m
-[0m[[0minfo[0m] [0m[32m- Create a new complex number with double values and check those values[0m[0m
-[0m[[0minfo[0m] [0m[32m- Create a complex number from a real number, imaginary part should be 0[0m[0m
-[0m[[0minfo[0m] [0m[32m- Complex number should be printed in the form R.R + I.Ii[0m[0m
-[0m[[0minfo[0m] [0m[32m- Adding complex numbers[0m[0m
-[0m[[0minfo[0m] [0m[32m- Adding complex number to a double[0m[0m
-[0m[[0minfo[0m] [0m[32m- Format for negative imaginary part should be R.R - I.Ii[0m[0m
-[0m[[0minfo[0m] [0m[32m- Add a complex to a double[0m[0m
