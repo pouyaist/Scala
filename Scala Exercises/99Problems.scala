@@ -133,8 +133,6 @@ object Solution {
         }
     }
 
-  //TODO p27 was super hard, could not figure it out
-
     def lsort[A](ls: List[List[A]]): List[List[A]] = ls sortWith {_.length < _.length}
 
 }
@@ -161,6 +159,30 @@ object Arithmetic {
     }
     def totientFunctional(start: Int): Int = (1 to start) filter { isCoprimeTo(start, _) } length 
 
-    // TODO p35 is not implemented
+    def primeFactors(num: Int): List[Int] = {
+        var res: List[Int] = Nil       
+        for(x<-2 to scala.math.sqrt(num).toInt if isPrime(x))
+        {
+            var temp = num
+            while(temp % x == 0){
+                temp = temp / x
+                res = x :: res
+            }
+        }
+        res
+    }
+
+    def primeFactorMultiplicity(num: Int): Map[Int, Int] = {
+       primeFactors(num).groupBy(identity).mapValues(_.size) 
+    }
+
+    def listPrimesinRange(start: Int, end: Int): List[Int] = {
+        (for(x<-start to end if isPrime(x)) yield(x)).toList
+    }
+
+    def goldbach(num: Int) = {
+        for{x<-3 to num  if (isPrime(x) && isPrime(num - x))} yield(x, num - x)
+    }
 }
+
 
