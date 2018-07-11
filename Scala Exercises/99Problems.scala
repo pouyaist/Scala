@@ -210,5 +210,13 @@ object Logic {
      printf("%-5s %-5s %-5s\n", a, b, f(a, b))
     }
   }
-}   
+  //TODO p46-47-48-50
+
+  def gray(n: Int): List[String] =   
+    if (n == 0) List("")
+    else {
+      val lower = gray(n - 1)
+      (lower map { "0" + _ }) ::: (lower.reverse map { "1" + _ })
+    }
+}
 
