@@ -1,0 +1,1 @@
+def f(arr:List[Int]):List[Int] = (for{x<- 1 to arr.length if (x%2 ==0)} yield arr(x-1)).toList
