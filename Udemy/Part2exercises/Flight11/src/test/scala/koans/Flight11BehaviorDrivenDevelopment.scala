@@ -31,15 +31,30 @@ class Flight11BehaviorDrivenDevelopment extends FunSpec with Matchers with Prope
   // actually verifies the Fraction class behaves as specified
   describe("A Fraction") {
     describe("when a zero denominator is passed") {
-      it("should throw IllegalArgumentException")(pending)
+      it("should throw IllegalArgumentException") {
+        a[IllegalArgumentException] should be thrownBy new Fraction(10, 0)
+      }
     }
     describe("when a positive denominator is passed") {
-      it("should leave the numerator at the same sign")(pending)
-      it("should leave the denominator positive")(pending)
+      it("should leave the numerator at the same sign") {
+        (new Fraction(10, 2)).numer should be (10)
+        (new Fraction(-10, 2)).numer should be (-10)
+      }
+      it("should leave the denominator positive"){
+        (new Fraction(10, 2)).denom should be (2)
+        (new Fraction(-10, 2)).denom should be (2)
+      }
     }
     describe("a negative denominator is passed") {
-      it("change the sign of the numerator")(pending)
-      it("change the sign of the denominator")(pending)
+      it("change the sign of the numerator"){
+        (new Fraction(-10, -2)).numer should be (10)
+        (new Fraction(10, -2)).numer should be (-10)
+      }
+      it("change the sign of the denominator"){
+        (new Fraction(10, -2)).denom should be (2)
+        (new Fraction(-10, -2)).denom should be (2)        
+      }
+
     }
   }
 
@@ -47,11 +62,8 @@ class Flight11BehaviorDrivenDevelopment extends FunSpec with Matchers with Prope
   describe("That same Fraction") {
     it("the denominator should always be normalized to positive") {
       forAll { (n: Int, d: Int) =>
-        whenever (d != 0) {
-          val frac = new Fraction(n, d)
-          // Replace the assertion below with an assertion
-          // that states frac's denominator should be greater than 0
-          true should be (false)
+        whenever (d != 0 && d != Integer.MIN_VALUE) {
+          (new Fraction(n, d)).denom should be > 0
         }
       }
     }
