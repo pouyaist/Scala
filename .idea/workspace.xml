@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50ac90ea-9544-4f92-ac51-e9da78e061f2" name="Default" comment="" />
+    <list default="true" id="50ac90ea-9544-4f92-ac51-e9da78e061f2" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Akka/akka-IoT_example/src/test/scala/com/example/IoTSpec.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Akka/akka-IoT_example/src/test/scala/com/example/AkkaQuickstartSpec.scala" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,19 +17,61 @@
       <file leaf-file-name="IotSupervisor.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Akka/akka-IoT_example/src/main/scala/com/example/IotSupervisor.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="7" selection-start-line="1" selection-end-line="1" selection-end-column="7" />
+            <state relative-caret-position="240">
+              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IotApp.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IotApp.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Akka/akka-IoT_example/src/main/scala/com/example/IotApp.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+            <state relative-caret-position="180">
+              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
               <folding>
                 <element signature="e#20#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AkkaQuickstart.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Akka/akka-quickstart-scala/src/main/scala/com/example/AkkaQuickstart.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Device.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Akka/akka-IoT_example/src/main/scala/com/example/Device.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IoTSpec.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Akka/akka-IoT_example/src/test/scala/com/example/IoTSpec.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="e#37#103#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AkkaQuickstartSpec.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Akka/akka-quickstart-scala/src/test/scala/com/example/AkkaQuickstartSpec.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+              <folding>
+                <element signature="e#37#103#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -37,8 +82,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Scala Script" />
         <option value="Scala Worksheet" />
+        <option value="Scala Script" />
       </list>
     </option>
   </component>
@@ -66,6 +111,9 @@
         <option value="$PROJECT_DIR$/Akka/akka-IoT_example/src/main/scala/com/example/IotSupervisor.scala" />
         <option value="$PROJECT_DIR$/Akka/akka-IoT_example/src/main/scala/com/example/IotApp.sc" />
         <option value="$PROJECT_DIR$/Akka/akka-IoT_example/src/main/scala/com/example/IotApp.scala" />
+        <option value="$PROJECT_DIR$/Akka/akka-IoT_example/src/main/scala/com/example/Device.scala" />
+        <option value="$PROJECT_DIR$/Akka/akka-IoT_example/src/test/scala/com/example/AkkaQuickstartSpec.scala" />
+        <option value="$PROJECT_DIR$/Akka/akka-IoT_example/src/test/scala/com/example/IoTSpec.scala" />
       </list>
     </option>
   </component>
@@ -149,6 +197,44 @@
               <item name="Scala" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scala" type="462c0819:PsiDirectoryNode" />
               <item name="Akka" type="462c0819:PsiDirectoryNode" />
+              <item name="akka-IoT_example" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Scala" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scala" type="462c0819:PsiDirectoryNode" />
+              <item name="Akka" type="462c0819:PsiDirectoryNode" />
+              <item name="akka-IoT_example" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Scala" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scala" type="462c0819:PsiDirectoryNode" />
+              <item name="Akka" type="462c0819:PsiDirectoryNode" />
+              <item name="akka-IoT_example" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Scala" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scala" type="462c0819:PsiDirectoryNode" />
+              <item name="Akka" type="462c0819:PsiDirectoryNode" />
+              <item name="akka-IoT_example" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Scala" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scala" type="462c0819:PsiDirectoryNode" />
+              <item name="Akka" type="462c0819:PsiDirectoryNode" />
               <item name="akka-quickstart-scala" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -171,7 +257,7 @@
               <item name="Akka" type="462c0819:PsiDirectoryNode" />
               <item name="akka-quickstart-scala" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Scala" type="b2602c69:ProjectViewProjectNode" />
@@ -179,7 +265,7 @@
               <item name="Akka" type="462c0819:PsiDirectoryNode" />
               <item name="akka-quickstart-scala" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -188,7 +274,7 @@
               <item name="Akka" type="462c0819:PsiDirectoryNode" />
               <item name="akka-quickstart-scala" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -198,7 +284,7 @@
               <item name="Akka" type="462c0819:PsiDirectoryNode" />
               <item name="akka-quickstart-scala" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="example" type="462c0819:PsiDirectoryNode" />
@@ -357,27 +443,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Hackerrank/rotate_string.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="73" selection-start-line="3" selection-start-column="73" selection-end-line="3" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hackerrank/sequence_of_full_colors.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hackerrank/super_digit.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Scala Exercises/99Problems.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1305">
@@ -577,26 +642,53 @@
     <entry file="file://$PROJECT_DIR$/Akka/akka-IoT_example/sbt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Akka/akka-IoT_example/src/main/scala/com/example/IotApp.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding>
+            <element signature="e#20#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Akka/akka-IoT_example/src/main/scala/com/example/IotSupervisor.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="7" selection-start-line="1" selection-end-line="1" selection-end-column="7" />
+        <state relative-caret-position="240">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Akka/akka-quickstart-scala/src/main/scala/com/example/AkkaQuickstart.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        <state relative-caret-position="90">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Akka/akka-IoT_example/src/main/scala/com/example/IotApp.scala">
+    <entry file="file://$PROJECT_DIR$/Akka/akka-IoT_example/src/main/scala/com/example/Device.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Akka/akka-quickstart-scala/src/test/scala/com/example/AkkaQuickstartSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
           <folding>
-            <element signature="e#20#49#0" expanded="true" />
+            <element signature="e#37#103#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Akka/akka-IoT_example/src/test/scala/com/example/IoTSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#37#103#0" expanded="true" />
           </folding>
         </state>
       </provider>
