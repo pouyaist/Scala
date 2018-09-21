@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50ac90ea-9544-4f92-ac51-e9da78e061f2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="50ac90ea-9544-4f92-ac51-e9da78e061f2" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,11 +20,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="concave_polygon.sc" pinned="false" current-in-tab="true">
+      <file leaf-file-name="concave_polygon.sc" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Hackerrank/FunctionalProgramming/concave_polygon.sc">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
               <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="substring_searching.sc" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Hackerrank/FunctionalProgramming/substring_searching.sc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -71,6 +78,7 @@
         <option value="$PROJECT_DIR$/Hackerrank/FunctionalProgramming/Solution.scala" />
         <option value="$PROJECT_DIR$/Hackerrank/FunctionalProgramming/Convex_hull.sc" />
         <option value="$PROJECT_DIR$/Hackerrank/FunctionalProgramming/concave_polygon.sc" />
+        <option value="$PROJECT_DIR$/Hackerrank/FunctionalProgramming/substring_searching.sc" />
       </list>
     </option>
   </component>
@@ -240,13 +248,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Scala Exercises/99Problems.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1305">
-          <caret line="87" column="13" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Hackerrank/fibonacci.scala" />
     <entry file="file://$PROJECT_DIR$/Hackerrank/pascal_triangle.scala" />
     <entry file="file://$PROJECT_DIR$/Hackerrank/rotate_string.scala" />
@@ -396,6 +397,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hackerrank/FunctionalProgramming/substring_searching.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
         </state>
       </provider>
     </entry>
